@@ -63,5 +63,5 @@
 /DBUILD_ICON_FILE_NAME="\"..\\Build\\Windows\\Resources\\Default.ico\""
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_IDENTIFIER=UnrealTheMEMES
-/fo "C:\Users\Antonio\Documents\Unreal Projects\UnrealTheMEMES\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMES\Default.rc2.res"
+/fo "C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMES\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"

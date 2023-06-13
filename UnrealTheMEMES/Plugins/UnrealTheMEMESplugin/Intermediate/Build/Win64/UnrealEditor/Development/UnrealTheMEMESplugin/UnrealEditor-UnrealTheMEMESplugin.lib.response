@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-UnrealTheMEMESplugin.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealTheMEMESEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
+"C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Plugins\UnrealTheMEMESplugin\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMESplugin\Module.UnrealTheMEMESplugin.cpp.obj"
+"C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Plugins\UnrealTheMEMESplugin\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMESplugin\Default.rc2.res"
+/OUT:"C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Plugins\UnrealTheMEMESplugin\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMESplugin\UnrealEditor-UnrealTheMEMESplugin.lib"

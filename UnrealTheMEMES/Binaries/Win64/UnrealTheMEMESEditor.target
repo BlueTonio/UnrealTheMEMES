@@ -33,6 +33,18 @@
 			"Type": "SymbolFile"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/UnrealTheMEMESplugin/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealTheMEMESplugin/Binaries/Win64/UnrealEditor-UnrealTheMEMESplugin.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealTheMEMESplugin/Binaries/Win64/UnrealEditor-UnrealTheMEMESplugin.pdb",
+			"Type": "SymbolFile"
+		},
+		{
 			"Path": "$(EngineDir)/Binaries/Win64/AgentInterface.dll",
 			"Type": "RequiredResource"
 		},
@@ -2970,6 +2982,10 @@
 		}
 	],
 	"RuntimeDependencies": [
+		{
+			"Path": "$(ProjectDir)/Plugins/UnrealTheMEMESplugin/UnrealTheMEMESplugin.uplugin",
+			"Type": "UFS"
+		},
 		{
 			"Path": "$(ProjectDir)/UnrealTheMEMES.uproject",
 			"Type": "UFS"

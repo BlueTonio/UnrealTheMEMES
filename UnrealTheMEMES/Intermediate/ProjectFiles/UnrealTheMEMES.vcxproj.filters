@@ -23,6 +23,57 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{BB38096A-B391-30DC-A0D4-4F3EA6B44507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\UnrealTheMEMESplugin">
+      <UniqueIdentifier>{FF78231B-3263-3BAB-B251-3D9870D15E35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\UnrealTheMEMESplugin\Source">
+      <UniqueIdentifier>{519AF87D-8905-359C-88F5-EFF35321C20D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin">
+      <UniqueIdentifier>{BE65AB3A-7B30-3EC6-AD6A-0199A91E9202}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin\UnrealTheMEMESplugin.Build.cs">
+      <Filter>Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin</Filter>
+    </None>
+    <Filter Include="Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin\Private">
+      <UniqueIdentifier>{6ADDA9CF-9E97-309C-8860-08204A7FB02D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin\Private\UnrealTheMEMESplugin.cpp">
+      <Filter>Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin\Private\UnrealTheMEMESpluginCommands.cpp">
+      <Filter>Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin\Private\UnrealTheMEMESpluginStyle.cpp">
+      <Filter>Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin\Public">
+      <UniqueIdentifier>{0330B1C4-3B2A-3054-9064-01AB12DEC7F6}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin\Public\UnrealTheMEMESplugin.h">
+      <Filter>Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin\Public\UnrealTheMEMESpluginCommands.h">
+      <Filter>Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin\Public\UnrealTheMEMESpluginStyle.h">
+      <Filter>Plugins\UnrealTheMEMESplugin\Source\UnrealTheMEMESplugin\Public</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\UnrealTheMEMESplugin\UnrealTheMEMESplugin.uplugin">
+      <Filter>Plugins\UnrealTheMEMESplugin</Filter>
+    </None>
+    <Filter Include="Plugins\UnrealTheMEMESplugin\Resources">
+      <UniqueIdentifier>{E1E3B99E-EAFD-306D-8801-3CC4778AB07C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\UnrealTheMEMESplugin\Resources\Icon128.png">
+      <Filter>Plugins\UnrealTheMEMESplugin\Resources</Filter>
+    </None>
+    <None Include="..\..\Plugins\UnrealTheMEMESplugin\Resources\PlaceholderButtonIcon.svg">
+      <Filter>Plugins\UnrealTheMEMESplugin\Resources</Filter>
+    </None>
     <Filter Include="Source\UnrealTheMEMES">
       <UniqueIdentifier>{1711F337-8EB2-325A-BF90-F063BAD5A153}</UniqueIdentifier>
     </Filter>

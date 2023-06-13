@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "UnrealTheMEMESplugin",
+	"Description": "funny plugin to destroy your unreal project",
+	"Category": "Other",
+	"CreatedBy": "BlueTonio",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "UnrealTheMEMESplugin",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	]
+}
