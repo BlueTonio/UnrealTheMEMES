@@ -30,10 +30,18 @@ void FUnrealTheMEMESpluginModule::StartupModule()
 		FCanExecuteAction());
 
 	UToolMenus::RegisterStartupCallback(FSimpleMulticastDelegate::FDelegate::CreateRaw(this, &FUnrealTheMEMESpluginModule::RegisterMenus));
+	FMenuBarBuilder Builder( MakeShared<FUICommandList>());
+	TSharedRef<SWidget> MenuSurvey = Builder.MakeWidget();
 	
-	FGlobalTabmanager::Get()->RegisterNomadTabSpawner(UnrealTheMEMESpluginTabName, FOnSpawnTab::CreateRaw(this, &FUnrealTheMEMESpluginModule::OnSpawnPluginTab))
-		.SetDisplayName(LOCTEXT("FUnrealTheMEMESpluginTabTitle", "UnrealTheMEMESplugin"))
-		.SetMenuType(ETabSpawnerMenuType::Hidden);
+	const TSharedRef<FGlobalTabmanager>& TabManager = FGlobalTabmanager::Get();
+	TabManager->RegisterNomadTabSpawner(UnrealTheMEMESpluginTabName, FOnSpawnTab::CreateLambda([MenuSurvey](const FSpawnTabArgs& SpawnTabArgs) -> TSharedRef<SDockTab> {
+		return SNew(SDockTab).TabRole(ETabRole::NomadTab)
+			[
+				SNew(STextBlock).Text(LOCTEXT("Question", "Do you like UnrealEngine ?"))
+			]; 
+		}));
+	/*return SNew(SDockTab).TabRole(ETabRole::NomadTab)*/
+	
 }
 
 void FUnrealTheMEMESpluginModule::ShutdownModule()
@@ -106,7 +114,7 @@ void FUnrealTheMEMESpluginModule::RegisterMenus()
 
 bool FUnrealTheMEMESpluginModule::Exec(UWorld* World, const TCHAR* Cmd, FOutputDevice& Ar)
 {
-	if (FParse::Command(&Cmd, TEXT("UnrealSurvery"))) {
+	if (FParse::Command(&Cmd, TEXT("UnrealSurvey"))) {
 		const TSharedRef<FGlobalTabmanager>& TabManager = FGlobalTabmanager::Get();
 		TabManager->TryInvokeTab(UnrealTheMEMESpluginTabName);
 		return true;
