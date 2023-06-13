@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "UnrealTheMEMES",
+			"Path": "C:\\Users\\Antonio\\Documents\\Unreal Projects\\UnrealTheMEMES\\Source\\UnrealTheMEMES.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "UnrealTheMEMESEditor",
+			"Path": "C:\\Users\\Antonio\\Documents\\Unreal Projects\\UnrealTheMEMES\\Source\\UnrealTheMEMESEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
