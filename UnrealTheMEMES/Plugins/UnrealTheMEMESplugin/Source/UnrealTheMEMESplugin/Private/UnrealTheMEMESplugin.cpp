@@ -12,6 +12,7 @@
 static const FName UnrealTheMEMESpluginTabName("UnrealTheMEMESplugin");
 
 #define LOCTEXT_NAMESPACE "FUnrealTheMEMESpluginModule"
+#define COLOR_DARK_YELLOW 
 
 void FUnrealTheMEMESpluginModule::StartupModule()
 {
@@ -33,13 +34,25 @@ void FUnrealTheMEMESpluginModule::StartupModule()
 	FMenuBarBuilder Builder( MakeShared<FUICommandList>());
 	TSharedRef<SWidget> MenuSurvey = Builder.MakeWidget();
 	
+
+	
 	const TSharedRef<FGlobalTabmanager>& TabManager = FGlobalTabmanager::Get();
 	TabManager->RegisterNomadTabSpawner(UnrealTheMEMESpluginTabName, FOnSpawnTab::CreateLambda([MenuSurvey](const FSpawnTabArgs& SpawnTabArgs) -> TSharedRef<SDockTab> {
+		FSlateFontInfo TextSizeInfo = FCoreStyle::Get().GetFontStyle("EmbossedText");
+		TextSizeInfo.Size = 45.f;
 		return SNew(SDockTab).TabRole(ETabRole::NomadTab)
 			[
-				SNew(STextBlock).Text(LOCTEXT("Question", "Do you like UnrealEngine ?"))
-			]; 
+				SNew(SVerticalBox)
+				+ SVerticalBox::Slot().AutoHeight()
+			.HAlign(HAlign_Center)[
+				SNew(STextBlock)
+					.Text(LOCTEXT("Question", "Do you like UnrealEngine?"))
+					.Font(TextSizeInfo)
+			]
+
+			];
 		}));
+
 	/*return SNew(SDockTab).TabRole(ETabRole::NomadTab)*/
 	
 }
