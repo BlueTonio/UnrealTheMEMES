@@ -1,9 +1,9 @@
 {
 	"SourceFiles": [
-		"D:\\UnrealProjects\\UnrealMEMES\\UnrealTheMEMES\\UnrealTheMEMES\\Source\\UnrealTheMEMES\\UnrealTheMEMES.Build.cs",
-		"D:\\UnrealProjects\\UnrealMEMES\\UnrealTheMEMES\\UnrealTheMEMES\\Plugins\\UnrealTheMEMESplugin\\Source\\UnrealTheMEMESplugin\\UnrealTheMEMESplugin.Build.cs",
-		"D:\\UnrealProjects\\UnrealMEMES\\UnrealTheMEMES\\UnrealTheMEMES\\Source\\UnrealTheMEMES.Target.cs",
-		"D:\\UnrealProjects\\UnrealMEMES\\UnrealTheMEMES\\UnrealTheMEMES\\Source\\UnrealTheMEMESEditor.Target.cs"
+		"C:\\Users\\Antonio\\Desktop\\Progetti AIV\\UnrealTheMEMES\\UnrealTheMEMES\\Source\\UnrealTheMEMES\\UnrealTheMEMES.Build.cs",
+		"C:\\Users\\Antonio\\Desktop\\Progetti AIV\\UnrealTheMEMES\\UnrealTheMEMES\\Plugins\\UnrealTheMEMESplugin\\Source\\UnrealTheMEMESplugin\\UnrealTheMEMESplugin.Build.cs",
+		"C:\\Users\\Antonio\\Desktop\\Progetti AIV\\UnrealTheMEMES\\UnrealTheMEMES\\Source\\UnrealTheMEMES.Target.cs",
+		"C:\\Users\\Antonio\\Desktop\\Progetti AIV\\UnrealTheMEMES\\UnrealTheMEMES\\Source\\UnrealTheMEMESEditor.Target.cs"
 	],
 	"EngineVersion": "5.0.3"
 }

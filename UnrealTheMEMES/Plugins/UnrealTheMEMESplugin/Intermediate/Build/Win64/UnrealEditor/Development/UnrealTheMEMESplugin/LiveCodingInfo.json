@@ -2,9 +2,9 @@
 	"RemapUnityFiles": 
 	{
 		"Module.UnrealTheMEMESplugin.cpp.obj": [
+			"UnrealTheMEMESplugin.cpp.obj",
 			"UnrealTheMEMESpluginCommands.cpp.obj",
-			"UnrealTheMEMESpluginStyle.cpp.obj",
-			"UnrealTheMEMESplugin.cpp.obj"
+			"UnrealTheMEMESpluginStyle.cpp.obj"
 		]
 	}
 }

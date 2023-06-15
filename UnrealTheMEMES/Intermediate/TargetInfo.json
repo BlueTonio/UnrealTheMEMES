@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "UnrealTheMEMES",
-			"Path": "D:\\UnrealProjects\\UnrealMEMES\\UnrealTheMEMES\\UnrealTheMEMES\\Source\\UnrealTheMEMES.Target.cs",
+			"Path": "C:\\Users\\Antonio\\Desktop\\Progetti AIV\\UnrealTheMEMES\\UnrealTheMEMES\\Source\\UnrealTheMEMES.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "UnrealTheMEMESEditor",
-			"Path": "D:\\UnrealProjects\\UnrealMEMES\\UnrealTheMEMES\\UnrealTheMEMES\\Source\\UnrealTheMEMESEditor.Target.cs",
+			"Path": "C:\\Users\\Antonio\\Desktop\\Progetti AIV\\UnrealTheMEMES\\UnrealTheMEMES\\Source\\UnrealTheMEMESEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

@@ -172,6 +172,7 @@
     <None Include="..\..\UnrealTheMEMES.uproject"/>
     <None Include="..\..\Source\UnrealTheMEMES.Target.cs"/>
     <None Include="..\..\Source\UnrealTheMEMESEditor.Target.cs"/>
+    <None Include="..\..\.gitignore"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
     <None Include="..\..\Config\DefaultGame.ini"/>

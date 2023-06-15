@@ -16,6 +16,12 @@ static const FName UnrealTheMEMESpluginTabName("UnrealTheMEMESplugin");
 
 void FUnrealTheMEMESpluginModule::StartupModule()
 {
+	TSharedRef<FExtender> Extender = MakeShared<FExtender>();
+	Extender->AddToolBarExtension("Platforms", EExtensionHook::After, nullptr, FToolBarExtensionDelegate::CreateLambda([](FToolBarBuilder& Builder)
+		{
+			Builder.AddSeparator();
+			Builder.AddToolBarButton(FUIAction(), NAME_None, FText::FromString("Ciao"));
+		}));
 	// This code will execute after your module is loaded into memory; the exact timing is specified in the .uplugin file per-module
 	
 	FUnrealTheMEMESpluginStyle::Initialize();
@@ -38,7 +44,12 @@ void FUnrealTheMEMESpluginModule::StartupModule()
 	const TSharedRef<FGlobalTabmanager>& TabManager = FGlobalTabmanager::Get();
 	TabManager->RegisterNomadTabSpawner(UnrealTheMEMESpluginTabName, FOnSpawnTab::CreateLambda([MenuSurvey](const FSpawnTabArgs& SpawnTabArgs) -> TSharedRef<SDockTab> {
 		FSlateFontInfo TextSizeInfo = FCoreStyle::Get().GetFontStyle("EmbossedText");
+		FSlateFontInfo TextSizeButtonInfo = FCoreStyle::Get().GetFontStyle("EmbossedText");
+		FTextBlockStyle TextBoxStyle = FCoreStyle::Get().GetWidgetStyle<FTextBlockStyle>("ButtonText");
 		TextSizeInfo.Size = 45.f;
+		TextSizeButtonInfo.Size = 30.f;
+		TextBoxStyle.SetFont(TextSizeButtonInfo);
+		//FButtonStyle ButtonInfo;
 		return SNew(SDockTab).TabRole(ETabRole::NomadTab)
 			[
 				SNew(SVerticalBox)
@@ -52,9 +63,45 @@ void FUnrealTheMEMESpluginModule::StartupModule()
 						float G = FMath::Sin(FPlatformTime::Seconds());
 						float B = FMath::Sin(FPlatformTime::Seconds() + PI);
 						return FSlateColor(FLinearColor(R, G, B, 1));
-				})
+					})
 			]
+			+SVerticalBox::Slot()
+				.AutoHeight()
+				.HAlign(HAlign_Center)
+				[
+				SNew(SHorizontalBox)
+				+SHorizontalBox::Slot()
+				.Padding(0,60,150,0)
+				.AutoWidth()
+				[
+					SNew(SButton)
+					.Text(FText::FromString("Yes !"))
+					.TextStyle(&TextBoxStyle)
+					.ContentPadding(FMargin(60, 60, 60, 60))
+					.OnClicked_Lambda([]() -> FReply
+					{
+						FMessageDialog::Open(EAppMsgType::YesNoYesAllNoAllCancel, FText::FromString("Ok, Good for you"));
+						return FReply::Handled();
+					})
+					
+				]
+				+SHorizontalBox::Slot()
+				.AutoWidth()
+				.Padding(0, 60, 0, 0)
+				[
+					SNew(SButton)
+					.Text(FText::FromString("No !"))
+					.TextStyle(&TextBoxStyle)
+					.ContentPadding(FMargin(60, 60, 60, 60))
+					.OnClicked_Lambda([]() -> FReply
+					{
+						FMessageDialog::Open(EAppMsgType::YesNoYesAllNoAllCancel, FText::FromString("Ok, Good for you"));
+						return FReply::Handled();
+					})
+				]
 
+
+			]
 			];
 		}));
 
