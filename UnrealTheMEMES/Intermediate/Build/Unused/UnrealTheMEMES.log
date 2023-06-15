@@ -1,17 +1,18 @@
 ﻿  Using bundled DotNet SDK
-  Log file: C:\Users\Antonio\AppData\Local\UnrealBuildTool\Log.txt
-  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES).
+  Log file: C:\Users\Stefano\AppData\Local\UnrealBuildTool\Log.txt
+  Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES).
   Building UnrealTheMEMESEditor...
-  Using Visual Studio 2019 14.29.30148 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Using Visual Studio 2022 14.29.30146 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.22000.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  [Adaptive Build] Excluded from UnrealTheMEMESplugin unity file: UnrealTheMEMESplugin.cpp
   Determining max actions to execute in parallel (6 physical cores, 12 logical cores)
     Executing up to 6 processes, one per physical core
-    Requested 1,5 GB free memory per action, 4,94 GB available: limiting max parallel actions to 3
-  Building 4 actions with 3 processes...
-  [1/4] Compile Module.UnrealTheMEMESplugin.cpp
+    Requested 1,5 GB free memory per action, 6,21 GB available: limiting max parallel actions to 4
+  Building 4 actions with 4 processes...
+  [1/4] Compile UnrealTheMEMESplugin.cpp
   [2/4] Link UnrealEditor-UnrealTheMEMESplugin.lib
-     Creazione della libreria C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Plugins\UnrealTheMEMESplugin\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMESplugin\UnrealEditor-UnrealTheMEMESplugin.lib e dell'oggetto C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Plugins\UnrealTheMEMESplugin\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMESplugin\UnrealEditor-UnrealTheMEMESplugin.exp
+     Creating library D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Plugins\UnrealTheMEMESplugin\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMESplugin\UnrealEditor-UnrealTheMEMESplugin.lib and object D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Plugins\UnrealTheMEMESplugin\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMESplugin\UnrealEditor-UnrealTheMEMESplugin.exp
   [3/4] Link UnrealEditor-UnrealTheMEMESplugin.dll
-     Creazione della libreria C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Plugins\UnrealTheMEMESplugin\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMESplugin\UnrealEditor-UnrealTheMEMESplugin.suppressed.lib e dell'oggetto C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Plugins\UnrealTheMEMESplugin\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMESplugin\UnrealEditor-UnrealTheMEMESplugin.suppressed.exp
+     Creating library D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Plugins\UnrealTheMEMESplugin\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMESplugin\UnrealEditor-UnrealTheMEMESplugin.suppressed.lib and object D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Plugins\UnrealTheMEMESplugin\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMESplugin\UnrealEditor-UnrealTheMEMESplugin.suppressed.exp
   [4/4] WriteMetadata UnrealTheMEMESEditor.target
-  Total time in Parallel executor: 4,94 seconds
-  Total execution time: 5,48 seconds
+  Total time in Parallel executor: 71,78 seconds
+  Total execution time: 72,65 seconds

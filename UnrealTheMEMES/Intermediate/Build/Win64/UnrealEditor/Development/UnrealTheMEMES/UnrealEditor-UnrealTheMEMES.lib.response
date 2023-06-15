@@ -6,10 +6,10 @@
 /NAME:"UnrealEditor-UnrealTheMEMES.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealTheMEMESEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMES\UnrealTheMEMES.cpp.obj"
-"C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMES\UnrealTheMEMESGameModeBase.cpp.obj"
-"C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMES\UnrealTheMEMES.init.gen.cpp.obj"
-"C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMES\UnrealTheMEMESGameModeBase.gen.cpp.obj"
-"C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMES\Default.rc2.res"
-/OUT:"C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMES\UnrealEditor-UnrealTheMEMES.lib"
+"D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealTheMEMESEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMES\UnrealTheMEMES.cpp.obj"
+"D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMES\UnrealTheMEMESGameModeBase.cpp.obj"
+"D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMES\UnrealTheMEMES.init.gen.cpp.obj"
+"D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMES\UnrealTheMEMESGameModeBase.gen.cpp.obj"
+"D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMES\Default.rc2.res"
+/OUT:"D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMES\UnrealEditor-UnrealTheMEMES.lib"

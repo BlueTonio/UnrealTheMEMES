@@ -35,7 +35,6 @@ void FUnrealTheMEMESpluginModule::StartupModule()
 	TSharedRef<SWidget> MenuSurvey = Builder.MakeWidget();
 	
 
-	
 	const TSharedRef<FGlobalTabmanager>& TabManager = FGlobalTabmanager::Get();
 	TabManager->RegisterNomadTabSpawner(UnrealTheMEMESpluginTabName, FOnSpawnTab::CreateLambda([MenuSurvey](const FSpawnTabArgs& SpawnTabArgs) -> TSharedRef<SDockTab> {
 		FSlateFontInfo TextSizeInfo = FCoreStyle::Get().GetFontStyle("EmbossedText");
@@ -48,6 +47,12 @@ void FUnrealTheMEMESpluginModule::StartupModule()
 				SNew(STextBlock)
 					.Text(LOCTEXT("Question", "Do you like UnrealEngine?"))
 					.Font(TextSizeInfo)
+					.ColorAndOpacity_Lambda([]() -> FSlateColor {
+						float R = FMath::Sin(FPlatformTime::Seconds() + PI * 0.5f);
+						float G = FMath::Sin(FPlatformTime::Seconds());
+						float B = FMath::Sin(FPlatformTime::Seconds() + PI);
+						return FSlateColor(FLinearColor(R, G, B, 1));
+				})
 			]
 
 			];

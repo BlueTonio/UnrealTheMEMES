@@ -1,17 +1,17 @@
 {
     "Version": "1.1",
     "Data": {
-        "Source": "c:\\users\\antonio\\desktop\\progetti aiv\\unrealthememes\\unrealthememes\\source\\unrealthememes\\unrealthememesgamemodebase.cpp",
+        "Source": "d:\\unrealprojects\\unrealmemes\\unrealthememes\\unrealthememes\\source\\unrealthememes\\unrealthememesgamemodebase.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\antonio\\desktop\\progetti aiv\\unrealthememes\\unrealthememes\\intermediate\\build\\win64\\unrealthememeseditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "PCH": "d:\\unrealprojects\\unrealmemes\\unrealthememes\\unrealthememes\\intermediate\\build\\win64\\unrealthememeseditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
         "Includes": [
-            "c:\\users\\antonio\\desktop\\progetti aiv\\unrealthememes\\unrealthememes\\intermediate\\build\\win64\\unrealeditor\\development\\unrealthememes\\definitions.unrealthememes.h",
-            "c:\\users\\antonio\\desktop\\progetti aiv\\unrealthememes\\unrealthememes\\source\\unrealthememes\\unrealthememesgamemodebase.h",
-            "d:\\unrealengine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
-            "d:\\unrealengine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
-            "d:\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
-            "d:\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
-            "c:\\users\\antonio\\desktop\\progetti aiv\\unrealthememes\\unrealthememes\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealthememes\\unrealthememesgamemodebase.generated.h"
+            "d:\\unrealprojects\\unrealmemes\\unrealthememes\\unrealthememes\\intermediate\\build\\win64\\unrealeditor\\development\\unrealthememes\\definitions.unrealthememes.h",
+            "d:\\unrealprojects\\unrealmemes\\unrealthememes\\unrealthememes\\source\\unrealthememes\\unrealthememesgamemodebase.h",
+            "c:\\program files\\unrealengine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\unrealengine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
+            "c:\\program files\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
+            "d:\\unrealprojects\\unrealmemes\\unrealthememes\\unrealthememes\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealthememes\\unrealthememesgamemodebase.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

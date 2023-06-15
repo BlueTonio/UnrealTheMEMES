@@ -1,4 +1,4 @@
-"C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealTheMEMESEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.cpp"
+D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealTheMEMESEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.cpp
 /I .
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\UnrealEd
 /I Editor
@@ -269,16 +269,16 @@
 /I ThirdParty\PhysX3\PhysX_3.4\Include\common
 /I ThirdParty\PhysX3\PhysX_3.4\Include\extensions
 /I ThirdParty\PhysX3\PhysX_3.4\Include\geometry
-/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
+/I "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/Yc"C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealTheMEMESEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
-/Fp"C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealTheMEMESEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.pch"
-/Fo"C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealTheMEMESEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
-/sourceDependencies "C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealTheMEMESEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.json"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\winrt"
+/Yc"D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealTheMEMESEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
+/Fp"D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealTheMEMESEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.pch"
+/Fo"D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealTheMEMESEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
+/sourceDependencies D:\UnrealProjects\UnrealMEMES\UnrealTheMEMES\UnrealTheMEMES\Intermediate\Build\Win64\UnrealTheMEMESEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.json
 /Zc:inline
 /nologo
 /Oi
