@@ -45,7 +45,7 @@ void FUnrealTheMEMESpluginModule::StartupModule()
 	TabManager->RegisterNomadTabSpawner(UnrealTheMEMESpluginTabName, FOnSpawnTab::CreateLambda([MenuSurvey](const FSpawnTabArgs& SpawnTabArgs) -> TSharedRef<SDockTab> {
 		FSlateFontInfo TextSizeInfo = FCoreStyle::Get().GetFontStyle("EmbossedText");
 		FSlateFontInfo TextSizeButtonInfo = FCoreStyle::Get().GetFontStyle("EmbossedText");
-		FTextBlockStyle TextBoxStyle = FCoreStyle::Get().GetWidgetStyle<FTextBlockStyle>("ButtonText");
+		FTextBlockStyle TextBoxStyle = FCoreStyle::Get().GetWidgetStyle<FTextBlockStyle>("ButtonText"); //serve per settare la grandezza del testo dei bottoni 
 		TextSizeInfo.Size = 45.f;
 		TextSizeButtonInfo.Size = 30.f;
 		TextBoxStyle.SetFont(TextSizeButtonInfo);
@@ -62,7 +62,7 @@ void FUnrealTheMEMESpluginModule::StartupModule()
 						float R = FMath::Sin(FPlatformTime::Seconds() + PI * 0.5f);
 						float G = FMath::Sin(FPlatformTime::Seconds());
 						float B = FMath::Sin(FPlatformTime::Seconds() + PI);
-						return FSlateColor(FLinearColor(R, G, B, 1));
+						return FSlateColor(FLinearColor(R, G, B, 1));               // rainbow effect semplicemente sono semplicemente 3 seni che hanno degli offset differenti
 					})
 			]
 			+SVerticalBox::Slot()
@@ -71,13 +71,13 @@ void FUnrealTheMEMESpluginModule::StartupModule()
 				[
 				SNew(SHorizontalBox)
 				+SHorizontalBox::Slot()
-				.Padding(0,60,150,0)
+				.Padding(0,60,150,0)       // padding qui serve per spostare il bottone 
 				.AutoWidth()
 				[
 					SNew(SButton)
 					.Text(FText::FromString("Yes !"))
 					.TextStyle(&TextBoxStyle)
-					.ContentPadding(FMargin(60, 60, 60, 60))
+					.ContentPadding(FMargin(60, 60, 60, 60))  // content padding serve per gestire la grandezza del bottone 
 					.OnClicked_Lambda([]() -> FReply
 					{
 						FMessageDialog::Open(EAppMsgType::YesNoYesAllNoAllCancel, FText::FromString("Ok, Good for you"));
