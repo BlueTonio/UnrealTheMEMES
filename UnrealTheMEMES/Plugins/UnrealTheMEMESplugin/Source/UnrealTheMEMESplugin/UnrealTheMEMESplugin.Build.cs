@@ -26,6 +26,7 @@ public class UnrealTheMEMESplugin : ModuleRules
 			new string[]
 			{
 				"Core",
+				"PropertyEditor",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);

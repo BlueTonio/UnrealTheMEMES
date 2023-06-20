@@ -3,11 +3,14 @@
 #include "UnrealTheMEMESplugin.h"
 #include "UnrealTheMEMESpluginStyle.h"
 #include "UnrealTheMEMESpluginCommands.h"
+#include "Editor.h"
 #include "LevelEditor.h"
 #include "Widgets/Docking/SDockTab.h"
 #include "Widgets/Layout/SBox.h"
 #include "Widgets/Text/STextBlock.h"
 #include "ToolMenus.h"
+#include "PropertyCustomizationHelpers.h"
+//#include "Text3DActor.h"
 
 static const FName UnrealTheMEMESpluginTabName("UnrealTheMEMESplugin");
 
@@ -45,15 +48,16 @@ void FUnrealTheMEMESpluginModule::StartupModule()
 	TabManager->RegisterNomadTabSpawner(UnrealTheMEMESpluginTabName, FOnSpawnTab::CreateLambda([MenuSurvey](const FSpawnTabArgs& SpawnTabArgs) -> TSharedRef<SDockTab> {
 		FSlateFontInfo TextSizeInfo = FCoreStyle::Get().GetFontStyle("EmbossedText");
 		FSlateFontInfo TextSizeButtonInfo = FCoreStyle::Get().GetFontStyle("EmbossedText");
-		FTextBlockStyle TextBoxStyle = FCoreStyle::Get().GetWidgetStyle<FTextBlockStyle>("ButtonText"); //serve per settare la grandezza del testo dei bottoni 
+		FTextBlockStyle TextBoxStyle = FCoreStyle::Get().GetWidgetStyle<FTextBlockStyle>("ButtonText"); //serve per settare la grandezza del testo dei bottoni
+		
 		TextSizeInfo.Size = 45.f;
 		TextSizeButtonInfo.Size = 30.f;
 		TextBoxStyle.SetFont(TextSizeButtonInfo);
 		//FButtonStyle ButtonInfo;
 		return SNew(SDockTab).TabRole(ETabRole::NomadTab)
 			[
-				SNew(SVerticalBox)
-				+ SVerticalBox::Slot().AutoHeight()
+				SNew(SVerticalBox)      
+				+ SVerticalBox::Slot().AutoHeight()               // slot rainbow scritta
 			.HAlign(HAlign_Center)[
 				SNew(STextBlock)
 					.Text(LOCTEXT("Question", "Do you like UnrealEngine?"))
@@ -65,12 +69,36 @@ void FUnrealTheMEMESpluginModule::StartupModule()
 						return FSlateColor(FLinearColor(R, G, B, 1));               // rainbow effect semplicemente sono semplicemente 3 seni che hanno degli offset differenti
 					})
 			]
+#pragma region Stuff to ask
+			/*+SVerticalBox::Slot()
+				.AutoHeight()
+				.HAlign(HAlign_Center)
+				[
+					SNew(SHorizontalBox)
+					+ SHorizontalBox::Slot()
+					.AutoWidth()
+					[
+						SNew(STextBlock)
+						.Text(LOCTEXT("PropetiesToActivate", "Select an actor"))
+					]
+					+SHorizontalBox::Slot()
+					.AutoWidth()
+					[
+						SNew(SObjectPropertyEntryBox)
+						.DisplayBrowse(true)
+						.DisplayThumbnail(true)
+						.AllowedClass(UBlueprint::StaticClass())
+						.OnObjectChanged(FOnSetObject::CreateStatic(&UnrealTheMEMESplugin::OnObjectChanged))
+						.EnableContentPicker(true)
+					]
+				]*/
+#pragma endregion Stuff to ask
 			+SVerticalBox::Slot()
 				.AutoHeight()
 				.HAlign(HAlign_Center)
 				[
-				SNew(SHorizontalBox)
-				+SHorizontalBox::Slot()
+				SNew(SHorizontalBox)   
+				+SHorizontalBox::Slot()     // slot button yes
 				.Padding(0,60,150,0)       // padding qui serve per spostare il bottone 
 				.AutoWidth()
 				[
@@ -80,12 +108,12 @@ void FUnrealTheMEMESpluginModule::StartupModule()
 					.ContentPadding(FMargin(60, 60, 60, 60))  // content padding serve per gestire la grandezza del bottone 
 					.OnClicked_Lambda([]() -> FReply
 					{
-						FMessageDialog::Open(EAppMsgType::YesNoYesAllNoAllCancel, FText::FromString("Ok, Good for you"));
+						FMessageDialog::Open(EAppMsgType::YesNoYesAllNoAllCancel, FText::FromString("Ok, Good for you")); // invia messaggio di dialogo
 						return FReply::Handled();
 					})
 					
 				]
-				+SHorizontalBox::Slot()
+				+SHorizontalBox::Slot()    // slot button no
 				.AutoWidth()
 				.Padding(0, 60, 0, 0)
 				[
@@ -95,7 +123,22 @@ void FUnrealTheMEMESpluginModule::StartupModule()
 					.ContentPadding(FMargin(60, 60, 60, 60))
 					.OnClicked_Lambda([]() -> FReply
 					{
-						FMessageDialog::Open(EAppMsgType::YesNoYesAllNoAllCancel, FText::FromString("Ok, Good for you"));
+						// delirio mode
+						UWorld* World = GEditor->GetEditorWorldContext().World();
+						TArray<FAssetData> AssetsData;
+						GEditor->GetContentBrowserSelections(AssetsData);
+						for (const FAssetData& AssetData : AssetsData)
+						{
+							UObject* Instance = AssetData.GetAsset();
+							UClass* AssetClass = Instance->GetClass();
+							if (AssetClass->IsChildOf(UBlueprint::StaticClass()))
+							{
+								AssetClass = Cast<UBlueprint>(Instance)->GeneratedClass;
+							}
+							World->SpawnActor<AActor>(AssetClass, FVector(-400, 750, 300), FRotator(0,180,0));
+							
+
+						}
 						return FReply::Handled();
 					})
 				]
