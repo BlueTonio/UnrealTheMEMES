@@ -10,6 +10,7 @@
 #include "Widgets/Text/STextBlock.h"
 #include "ToolMenus.h"
 #include "PropertyCustomizationHelpers.h"
+#include "Kismet/GameplayStatics.h"
 //#include "Text3DActor.h"
 
 static const FName UnrealTheMEMESpluginTabName("UnrealTheMEMESplugin");
@@ -108,7 +109,7 @@ void FUnrealTheMEMESpluginModule::StartupModule()
 					.ContentPadding(FMargin(60, 60, 60, 60))  // content padding serve per gestire la grandezza del bottone 
 					.OnClicked_Lambda([]() -> FReply
 					{
-						FMessageDialog::Open(EAppMsgType::YesNoYesAllNoAllCancel, FText::FromString("Ok, Good for you")); // invia messaggio di dialogo
+						FMessageDialog::Open(EAppMsgType::Ok, FText::FromString("Ok, Good for you")); // invia messaggio di dialogo
 						return FReply::Handled();
 					})
 					
@@ -138,6 +139,20 @@ void FUnrealTheMEMESpluginModule::StartupModule()
 							World->SpawnActor<AActor>(AssetClass, FVector(-400, 750, 300), FRotator(0,180,0));
 							
 
+						}
+						TArray<AActor*> FoundActors;
+						UGameplayStatics::GetAllActorsOfClass(World, AActor::StaticClass(), FoundActors);
+						int number = 0;
+						for (AActor* FoundActor : FoundActors)
+						{
+							if (FoundActor->GetOutermost()->IsDirty()) {
+								FString string = FString::Printf(TEXT("UE_SUCKS_%d"), number);
+								FoundActor->SetActorLabel(string);
+								number++;
+								//UE_LOG(LogTemp, Warning, TEXT("Useless: %s %s %s"), *FoundActor->GetName(), *FoundActor->GetPathName(), *FoundActor->GetFullName());
+
+							}
+							
 						}
 						return FReply::Handled();
 					})

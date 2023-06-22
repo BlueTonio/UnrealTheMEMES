@@ -5,7 +5,7 @@
   Using Visual Studio 2019 14.29.30148 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Determining max actions to execute in parallel (6 physical cores, 12 logical cores)
     Executing up to 6 processes, one per physical core
-    Requested 1,5 GB free memory per action, 3,98 GB available: limiting max parallel actions to 2
+    Requested 1,5 GB free memory per action, 3,82 GB available: limiting max parallel actions to 2
   Building 4 actions with 2 processes...
   [1/4] Compile Module.UnrealTheMEMESplugin.cpp
   [2/4] Link UnrealEditor-UnrealTheMEMESplugin.lib
@@ -13,5 +13,5 @@
   [3/4] Link UnrealEditor-UnrealTheMEMESplugin.dll
      Creazione della libreria C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Plugins\UnrealTheMEMESplugin\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMESplugin\UnrealEditor-UnrealTheMEMESplugin.suppressed.lib e dell'oggetto C:\Users\Antonio\Desktop\Progetti AIV\UnrealTheMEMES\UnrealTheMEMES\Plugins\UnrealTheMEMESplugin\Intermediate\Build\Win64\UnrealEditor\Development\UnrealTheMEMESplugin\UnrealEditor-UnrealTheMEMESplugin.suppressed.exp
   [4/4] WriteMetadata UnrealTheMEMESEditor.target
-  Total time in Parallel executor: 5,18 seconds
-  Total execution time: 5,79 seconds
+  Total time in Parallel executor: 6,28 seconds
+  Total execution time: 6,94 seconds
